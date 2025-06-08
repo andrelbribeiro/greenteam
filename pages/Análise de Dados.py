@@ -24,10 +24,11 @@ coluna_pbl = '4.11'
 
 # Filtros demográficos
 filtros = {}
+st.sidebar.markdown("Filtros Demográficos")
 for coluna in colunas_demograficas:
     if coluna in df.columns:
         opcoes = df[coluna].dropna().unique()
-        selecionado = st.multiselect(f"Filtrar por {coluna}", opcoes)
+        selecionado = st.sidebar.multiselect(f"Filtrar por {coluna}", opcoes)
         if selecionado:
             filtros[coluna] = selecionado
 
