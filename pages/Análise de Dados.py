@@ -114,7 +114,7 @@ for col1, col2 in pares_motivacao:
         # Média geral das médias e variâncias
         media_geral = medias_linha.mean()
         variancia_geral = variancias_linha.std()
-        st.write(f"Motivação ( {col1} & {col2} ): Média = {media_geral:.2f}, DP = {variancia_geral:.2f}")
+        st.write(f" ( {col1} & {col2} ): Média = {media_geral:.2f}, DP = {variancia_geral:.2f}")
 st.write('(2.1 e 2.2 -> Atenção), ', '(2.3 e 2.4 -> Relevância), ', '(2.5 e 2.6 -> Confiança), ', '(2.7 e 2.8 -> Satisfação)')
         
 st.header("Engajamento - Média e Desvio Padrão")
@@ -126,7 +126,7 @@ for col1, col2 in pares_engajamento:
         # Média geral das médias e desvio padrão
         media_geral = medias_linha.mean()
         variancia_geral = variancias_linha.std()
-        st.write(f"Engajamento ( {col1} & {col2} ): Média = {media_geral:.2f}, DP = {variancia_geral:.2f}")
+        st.write(f" ( {col1} & {col2} ): Média = {media_geral:.2f}, DP = {variancia_geral:.2f}")
 st.write('(3.1 e 3.2 -> Vigor), ', '(3.3 e 3.4 -> Dedicação), ', '(3.5 e 3.6 -> Absorção), ', '(3.7 e 3.8 -> Avaliação geral do engajamento)')
 st.write('(1.6 -> Motivo de ter faltado a Formação.)')  
 st.write('(2.10 -> Sugestões de melhoria.)') 
