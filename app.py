@@ -69,6 +69,6 @@ st.markdown("""
     }
     </style>
     <div class="footer">
-        © 2025 - Desenvolvido por André Ribeiro com a colaboração do Grupo NEXT - v07062025
+        © 2025 - Desenvolvido por André Ribeiro com a colaboração do Grupo NEXT - v08062025
     </div>
 """, unsafe_allow_html=True)
