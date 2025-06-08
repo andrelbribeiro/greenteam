@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="MEP", layout="wide")
-st.title('MEP - Motivação, Engajamento e PBL')
+st.set_page_config(page_title="MotivaLab PBL", layout="wide")
+st.title('MotivaLab PBL - Motivação, Engajamento e PBL')
 st.write("Upload da Planilha de Dados")
 st.write("Selecione uma das páginas na barra lateral para visualizar dos Resultados.")
 

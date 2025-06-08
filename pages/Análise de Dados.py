@@ -2,7 +2,7 @@ from narwhals import col
 import streamlit as st 
 import pandas as pd
 
-st.title("MEP - Motivação, Engajamento e PBL")
+st.title("MotivaLab PBL - Motivação, Engajamento e PBL")
 
 if st.session_state.df is None:
     st.warning("Por favor, volte à página inicial e carregue a planilha.")
@@ -14,7 +14,7 @@ st.write('(2.1 e 2.2 -> Atenção), ', '(2.3 e 2.4 -> Relevância), ', '(2.5 e 2
 st.write('(3.1 e 3.2 -> Vigor), ', '(3.3 e 3.4 -> Dedicação), ', '(3.5 e 3.6 -> Absorção), ', '(3.7 e 3.8 -> Avaliação geral do engajamento)')
 st.write('(4.11 -> Maturidade PBL)')          
 colunas_demograficas = ['AV', 'Idade', 'Genero', 'Turma', 'Nivel', 'Escolaridade', '2.1',
-                        '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.8', '2.9', '3.1', '3.2',
+                        '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.8','2.9', '3.1', '3.2',
                          '3.3', '3.4', '3.5', '3.6', '3.7', '3.8', '4.11']
 
 colunas_analise = ['2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.8', 
@@ -28,6 +28,7 @@ st.sidebar.markdown("Filtros Demográficos")
 for coluna in colunas_demograficas:
     if coluna in df.columns:
         opcoes = df[coluna].dropna().unique()
+        #print(coluna)
         selecionado = st.sidebar.multiselect(f"Filtrar por {coluna}", opcoes)
         if selecionado:
             filtros[coluna] = selecionado
