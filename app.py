@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import openpyxl
 
-st.write("openpyxl versão:", openpyxl.__version__)
+# st.write("openpyxl versão:", openpyxl.__version__)
 
 
 st.set_page_config(page_title="greenteam_v2", layout="wide")
-st.title('PBL, Motivação e Engajamento')
+st.title('PBL, Motivação e Engajamento - V2')
 st.write("Upload da Planilha de Dados")
 st.write("Selecione uma das páginas na barra lateral para visualizar dos Resultados.")
 
@@ -18,7 +18,7 @@ uploaded_file = st.file_uploader("Carregue a planilha (.xlsx ou .csv)", type=["c
 
 if uploaded_file:
     if uploaded_file.name.endswith(".csv"):
-        st.session_state.df = pd.read_csv(uploaded_file)
+        st.session_state.df = pd.read_csv(uploaded_file, encoding="latin1")
     else:
         st.session_state.df = pd.read_excel(uploaded_file, engine="openpyxl")
 
