@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Configuração da página
 #st.set_page_config(page_title="Dashboard de Motivação ARCS", layout="wide")
-st.set_page_config(page_title="GreenTeam-Lab", layout="wide")
+st.set_page_config(page_title="pblmotivationengagement", layout="wide")
 
 st.title("📊 Análise de PBL na Motivação e Engajamento")
 #st.markdown("Esta aplicação analisa a evolução da motivação dos alunos com base nos quatro pilares de Keller.")

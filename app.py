@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="GreenTeam-Lab", layout="wide")
+st.set_page_config(page_title="pblmotivationengagement", layout="wide")
 st.title('PBL, Motivação e Engajamento')
 st.write("Upload da Planilha de Dados")
 st.write("Selecione uma das páginas na barra lateral para visualizar dos Resultados.")
