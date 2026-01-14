@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 # Configuração da página
 #st.set_page_config(page_title="Dashboard de Motivação ARCS", layout="wide")
