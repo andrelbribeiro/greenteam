@@ -10,13 +10,13 @@ st.write("Selecione uma das páginas na barra lateral para visualizar dos Result
 if 'df' not in st.session_state:
     st.session_state.df = None
 
-uploaded_file = st.file_uploader("Carregue a planilha (.xlsx ou .csv)", type=["csv", "xlsx"])
+uploaded_file = st.file_uploader("Carregue a planilha (.xlsx ou .csv)", type=["csv", "xlsx", "xls"])
 
 if uploaded_file:
     if uploaded_file.name.endswith(".csv"):
         st.session_state.df = pd.read_csv(uploaded_file)
     else:
-        st.session_state.df = pd.read_excel(uploaded_file)
+        st.session_state.df = pd.read_excel(uploaded_file, engine="openpyxl")
 
     st.success("Arquivo carregado com sucesso! Vá para as páginas no menu lateral.")
 
@@ -29,21 +29,7 @@ if uploaded_file:
         df_sem_nulos = st.session_state.df.copy()
     else:
         df_sem_nulos = st.session_state.df.dropna(subset=colunas_existentes)
-        #st.success("Linhas com valores nulos foram removidas.")
-        #st.success(f"Linhas restantes após limpeza: {len(df_sem_nulos)}")
-
-        #Botão para download do CSV limpo
-        # csv = df_sem_nulos.to_csv(index=False).encode('utf-8')
-        # st.download_button(
-        #     label="📥 Baixar dados sem nulos (CSV)",
-        #     data=csv,
-        #     file_name="dados_limpos.csv",
-        #     mime='text/csv'
-        # )
-
         st.session_state.df = df_sem_nulos 
-
-
 
 else:
     st.info("Aguardando o upload do arquivo.")
