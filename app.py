@@ -1,5 +1,9 @@
 import streamlit as st
 import pandas as pd
+import openpyxl
+
+st.write("openpyxl versão:", openpyxl.__version__)
+
 
 st.set_page_config(page_title="greenteam_v2", layout="wide")
 st.title('PBL, Motivação e Engajamento')
