@@ -1,0 +1,10 @@
+### https://pblmotivationengagement-cin-ufpe.streamlit.app/
+## PBL Test(Problema, Processo, Ambiente, Capital Humano, Conteúdo)
+## Problema(1-Atividades ligadas ao problema, 3 - Problema Real, 6 - Problema complexo)
+## Processo(10 - Avaliações contínuas)
+## Ambiente(4 - Ambiente real)
+## Capital Humano (2- Dono do problema , 5- Condução resolução do problema, 8 - Reflexão conteúdo aprendido, 9 - Aprendizagem colaborativa e multidirecional)
+## Conteúdo (7 - Soluções são implementadas antes de serem implementadas)
+## PBL Test(Problema, Processo, Ambiente, Capital Humano, Avaliação)
+## ARCS(Atencao, Relevancia, Confianca e Satisfacao)
+## UWES(Vigor, Dedicacão e Absorção)
