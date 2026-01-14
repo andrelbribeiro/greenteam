@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import openpyxl
+
 
 # st.write("openpyxl versão:", openpyxl.__version__)
 
